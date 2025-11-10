@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Harmony Counseling, LLC.</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
         <style>
             .shadow-top {
                 box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
@@ -12,16 +12,17 @@
         </style>    
     </head>
     <body class="d-flex flex-column min-vh-100">
+
         <!--Nav Bar-->
         <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="Logo" width="80" height="80" class="rounded-circle">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="logo" class="rounded-circle" style="height: 80px; width:auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="our_counselors.html">Our Counselors</a>
@@ -41,7 +42,7 @@
                 </filter>
             </defs>
 
-            <path fill="#0d6efd" filter="url(#bottomShadow)" d="
+            <path fill="#1ecbe1" filter="url(#bottomShadow)" d="
                 M0,60
                 C240,20 480,100 720,60
                 C960,20 1200,80 1440,40
@@ -59,22 +60,22 @@
         </div>        
 
         <!--Contact Form-->
-        <div class="container my-5 border border rounded">
+        <div class="container my-5 border bg-light border rounded">
             <form action="email-send.php" method="POST">
                 <div class="mb-3">
                     <label for="name-input" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="nameinput" required>
+                    <input type="text" class="form-control bg-light" id="nameinput" required>
                 </div>
                 <div class="mb-3">
                     <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="example@email.com" required>
+                    <input type="email" class="form-control bg-light" id="email-input" placeholder="example@email.com" required>
                 </div>
                 <div class="mb-3">
                     <label for="text-box" class="form-label">Message</label>
-                    <textarea class="form-control" id="text-box" rows="6" placeholder="Optional"></textarea>
+                    <textarea class="form-control bg-light" id="text-box" rows="6" placeholder="Optional"></textarea>
                 </div>
                 <div class="container mb-3">
-                    <button type="submit" class="btn btn-primary btn-lg rounded-pill">Send</button>
+                    <button type="submit" class="btn btn-secondary btn-lg rounded-pill">Send</button>
                 </div>
             </form>
         </div>
@@ -84,21 +85,15 @@
         <!--Bottom Nav-->
         <nav class="navbar navbar-expand-lg bg-primary mt-auto shadow-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav justify-content-center w-100">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="our_counselors.html">Our Counselors</a>
                         <a class="nav-link" href="resources.html">Resources</a>
                         <a class="nav-link" href="schedule_an_appointment.html">Schedule an Appointment</a>
                         <a class="nav-link active" aria-current="page" href="contact_us.html">Contact Us</a>
                     </div>
-                </div>
             </div>
         </nav>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>             

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Harmony Counseling, LLC.</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
         <style>
             .shadow-top {
                 box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
@@ -26,14 +26,14 @@
         
         <!--Nav Bar-->
         <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="Logo" width="80" height="80" class="rounded-circle">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="logo" class="rounded-circle" style="height: 80px; width:auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="our_counselors.html">Our Counselors</a>
@@ -44,7 +44,6 @@
                 </div>
             </div>
         </nav>
-        
         <!--Wave-->
         <svg viewBox="0 0 1440 120">
             <defs>
@@ -53,7 +52,7 @@
                 </filter>
             </defs>
 
-            <path fill="#0d6efd" filter="url(#bottomShadow)" d="
+            <path fill="#1ecbe1" filter="url(#bottomShadow)" d="
                 M0,70
                 C360,30 720,90 1080,70
                 C1260,50 1440,60 1440,60
@@ -453,18 +452,13 @@
         <!--Bottom Nav-->
         <nav class="navbar navbar-expand-lg bg-primary mt-auto shadow-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav justify-content-center w-100">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="our_counselors.html">Our Counselors</a>
                         <a class="nav-link" href="resources.html">Resources</a>
                         <a class="nav-link" href="schedule_an_appointment.html">Schedule an Appointment</a>
                         <a class="nav-link" href="contact_us.html">Contact Us</a>
                     </div>
-                </div>
             </div>
         </nav>
 
@@ -478,10 +472,6 @@
                 </div>
             </div>
         </div>
-
-        <!--CDNs-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
         
         <!--Event Listener for Modal Lightbox-->
         <script>
@@ -495,6 +485,6 @@
                 modalImg.src = imgSrc;
             });
         </script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>             
