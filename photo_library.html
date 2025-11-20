@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Harmony Counseling, LLC.</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <style>
             .shadow-top {
@@ -78,7 +79,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <img src="resource pictures/ADHD/adhd_daily.jpg" 
                         alt="adhd daily routine" 
-                        class="img-fluid rounded img-hover cickable image" 
+                        class="img-fluid rounded img-hover clickable image" 
                         data-bs-toggle="modal"
                         data-bs-target="#imageModal" 
                         >
@@ -483,18 +484,17 @@
             </div>
         </div>
         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
         <!--Event Listener for Modal Lightbox-->
         <script>
-
-            const modal = document.getElementById('imageModal');
-
-            modal.addEventListener('show.bs.modal', function (event) {
+            document.getElementById('imageModal').addEventListener('show.bs.modal', function (event) {
                 const trigger = event.relatedTarget;
-                const imgSrc = trigger.src.replace('/thumbs/', '/large/');
-                const modalImg = modal.querySelector('#modalImage');
-                modalImg.src = imgSrc;
+                if (!trigger) return;
+    
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = trigger.src;
             });
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>             
