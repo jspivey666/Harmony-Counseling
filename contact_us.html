@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Harmony Counseling, LLC.</title>
-        <link rel="stylesheet" href="css/main.css">
-        <style>
-            .shadow-top {
-                box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
-            }
-        </style>    
+        <link rel="stylesheet" href="css/main.css">   
     </head>
     <body class="d-flex flex-column min-vh-100">
+
+        <!--Banner-->
+        <div class="banner py-3">
+            <div class="container d-flex justify-content-center align-items-center">
+                <img src="images/logo.png" alt="Logo" class="rounded-circle w-25">
+            </div>
+        </div>        
 
         <!--Nav Bar-->
         <nav class="navbar navbar-expand-lg bg-primary">
@@ -56,28 +58,26 @@
         </div>        
 
         <!--Contact Form-->
-        <div class="container my-5 border bg-light border rounded">
+        <div class="container my-5 border border rounded fw-bold">
             <form action="email-send.php" method="POST">
                 <div class="mb-3">
                     <label for="name-input" class="form-label">Name</label>
-                    <input type="text" class="form-control bg-light" id="nameinput" required>
+                    <input type="text" class="form-control bg-light" id="nameinput" name="name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="form-control bg-light" id="email-input" placeholder="example@email.com" required>
+                    <input type="email" class="form-control bg-light" id="email-input" name="email" placeholder="example@email.com" required>
                 </div>
                 <div class="mb-3">
                     <label for="text-box" class="form-label">Message</label>
-                    <textarea class="form-control bg-light" id="text-box" rows="6" placeholder="Optional"></textarea>
+                    <textarea class="form-control bg-light" id="text-box" rows="6" name="message" placeholder="Optional"></textarea>
                 </div>
                 <div class="container mb-3">
                     <button type="submit" class="btn btn-secondary btn-md rounded-pill shadow">Send</button>
                 </div>
             </form>
         </div>
-
-
-        
+       
         <!--Bottom Nav-->
         <nav class="navbar navbar-expand-lg bg-primary mt-auto shadow-top">
             <div class="container-fluid">
@@ -89,6 +89,12 @@
                     </div>
             </div>
         </nav>
+
+        <!--LLC Tag-->
+        <div class="container-fluid w-100 text-center bg-primary">
+            <a class="text-dark text-decoration-none" href="index.html">Harmony Counseling, LLC</a>
+        </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>             
