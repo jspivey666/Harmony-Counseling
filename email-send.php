@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = strip_tags(trim($_POST["message"]));
 
     // Email Location
-    $to = "kspivey@counselingsecure.com";
+    $to = "jonathanjspivey@gmail.com";
 
     // Email Subject
     $subject = "Website Contact! ( $name )";
