@@ -1,3 +1,16 @@
 $primary: #1ecbe1;
-$secondary: #1e87e1; 
-$body-bg: #10572852;
+$secondary: #1e86e154; 
+$body-bg: #0d96243d;
+
+$font-family-sans-serif: "Roboto", sans-serif;
+
+.banner {
+    background-image: url("../images/willow_in_water.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shadow-top {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
